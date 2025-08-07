@@ -42,7 +42,7 @@ export default async function Home() {
         <div className="bg-blue-200 h-full">
           <div className="grid grid-cols-2 md:grid-cols-3 p-2 pt-4 gap-2">
             {students.map((student: Student) => (
-              <div className="flex justify-between items-center w-full p-2 bg-amber-300" key={student.id}>
+              <div className="flex justify-between items-center w-full p-2 bg-amber-300" key={student.id as string}>
                 <div>{student.name}</div>
                 <div className="flex items-center space-x-2">
                   <div>
